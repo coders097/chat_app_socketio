@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Urbanist:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Urbanist', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+/* transition: all cubic-bezier(18,.56,.94,1.37) 0.2s; */
+:root{
+  --bg-light:#fdf4f4;
+  --text-dark:rgb(51, 48, 45);
+  --text-plain:#555;
+  --text-light:rgb(168, 168, 168);
+  --blue:rgb(56, 136, 255);
+  --red:rgb(255, 57, 57);
+}
+
+*::-webkit-scrollbar{
+  width: 7px;
+  background: rgb(224, 224, 224);
+}
+*::-webkit-scrollbar-thumb{
+  background: var(--text-light);
+}
+*::-webkit-scrollbar-thumb:hover{
+  background: var(--text-plain);
+}
+
+.btn{
+  padding: 12px 22px;
+  height: fit-content;
+  border-radius: 6px;
+  width: fit-content;
+  outline: none;
+  border: none;
+  color: white;
+  background: rgb(56, 136, 255);
+  transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+}
+.btn:hover{
+  background: rgb(29, 118, 252);
+}
+.btn:active{
+  background: rgb(15, 79, 175);
+  transform: scale(0.95);
+}
+.btn-danger{
+  background: rgb(255, 57, 57);
+}
+.btn-danger:hover{
+  background: rgb(255, 18, 58);
+}
+.btn-danger:active{
+  background: rgb(160, 27, 49);
+}
+.de-active{
+  background: rgb(129, 129, 129);
+  pointer-events: none;
+}
+.de-active:hover{
+  background: rgb(129, 129, 129);
+}
+.de-active:active{
+  background: rgb(129, 129, 129);
+}
+
+
+.input{
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+.textarea{
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+.input::placeholder{
+  color: var(--text-light);
+}
+.textarea::placeholder{
+  color: var(--text-light);
+}
+._valid{
+  border: solid var(--blue) 1.5px;
+}
+._valid:focus{
+  border: solid var(--blue) 1.7px;
+  box-shadow: rgb(77, 169, 255) 0px 0px 4px;
+}
+._wrong{
+  border: solid var(--red) 1.5px;
+}
+._wrong:focus{
+  border: solid var(--red) 1.7px;
+  box-shadow: rgb(255, 98, 77) 0px 0px 4px;
+}

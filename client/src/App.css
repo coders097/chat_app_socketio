@@ -1,0 +1,339 @@
+/* // Navbar style */
+.Talkin nav{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid rgba(0, 0, 0, 0.123) 1px;
+    gap: 15px;
+    align-items: center;
+    padding: 0px 25px;
+    display: flex;
+}
+.Talkin nav input{
+    width: 600px; 
+    height: fit-content;
+}
+.Talkin nav p{
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+}
+.Talkin nav p img{
+    height: 30px;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+}
+.Talkin nav p img:active{
+    transform: scale(0.9);
+}
+.Talkin nav p .menu{
+    position: absolute;
+    top: 100%;
+    border-radius: 5px;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    opacity: 1;
+    visibility: unset;
+    right: 0%;
+    z-index: 120;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 0px 4px;
+    background: rgba(255, 255, 255, 0.651);
+    backdrop-filter: blur(6px);
+    padding: 4px 0px;
+}
+.Talkin nav p ._hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.Talkin nav p .menu p{
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+.Talkin nav p .menu p:hover{
+    background: var(--blue);
+    color: white;
+}
+.Talkin nav p .menu p:active{
+    transform: scale(0.95);
+    border-radius: 10px;
+}
+.Talkin nav .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+.Talkin nav .user img{
+    height: 90%;
+    object-fit: cover;
+}
+.Talkin nav .user div{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+.Talkin nav .user div h3{
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+.Talkin nav .user div button{
+    padding: 10px 16px;
+}
+
+.Talkin nav .connection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    opacity: 1;
+    background: var(--red);
+    color: white;
+    visibility: unset;
+    text-align: center;
+}
+.Talkin nav ._lost{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+/* //  Aside style */
+.Talkin aside{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-right: solid rgba(0, 0, 0, 0.123) 1px;
+    flex-direction: column;
+}
+.Talkin aside div ._display{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.Talkin aside div .item img{
+    border-radius: 5px;
+}
+.Talkin aside .public-rooms{
+    width: 100%;
+    border-bottom: solid rgba(0, 0, 0, 0.123) 1px;
+    height: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+.Talkin aside .public-rooms ._display .item{
+    width: 100%;
+    padding: 5px;
+    padding-left: 7px;
+    height: 30px;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    cursor: default;
+    display: flex;
+    align-items: center;
+}
+.Talkin aside .public-rooms ._display .item:hover{
+    background: rgb(255, 223, 223);
+}
+.Talkin aside .private-chats{
+    width: 100%;
+    border-bottom: solid rgba(0, 0, 0, 0.123) 1px;
+    display: flex;
+    flex-direction: column;
+    height: calc(50% - 30px);
+}
+.Talkin aside .private-chats ._display .item{
+    width: 100%;
+    padding: 5px;
+    padding-left: 7px;
+    cursor: default;
+    height: 45px;
+    display: flex;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    gap: 5px;
+    align-items: center;
+}
+.Talkin aside .private-chats ._display .item:hover{
+    background: rgb(255, 223, 223);
+}
+.Talkin aside .private-chats ._display .item img{
+    height: 100%;
+    margin-right: 3px;
+    object-fit: cover;
+}
+.Talkin aside .add{
+    width: 100%;
+    height: 60px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+.Talkin aside .add button{
+    outline: none;
+    height: 100%;
+    padding: 7px;
+    border: none;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    background: none;
+}
+.Talkin aside .add button:active{
+    transform: scale(0.9);
+}
+.Talkin aside .add button img{
+    height: 100%;
+    object-fit: contain;
+}
+.Talkin aside div h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid rgba(0, 0, 0, 0.123) 1px;
+    padding: 4px;
+    cursor: default;
+    font-size: 1.2rem;
+    color: rgb(141, 141, 141);
+}
+.Talkin aside div ._active{
+    background: rgb(0, 162, 255);
+}
+.Talkin aside div ._active p{
+    color: white;
+}
+.Talkin aside div ._active:hover {
+    background: rgb(0, 162, 255) !important;
+}
+.Talkin aside div .item:active{
+    transform: scale(0.95);
+}
+
+
+/* // display */
+.Talkin main{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.Talkin main .messages-view{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    padding: 15px;
+    flex-direction: column;
+    height: calc(100% - 150px);
+}
+.Talkin main .messages-view .message{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.Talkin main .messages-view .message .profile-sender{
+    width: 70px;
+    box-shadow:rgba(0, 0, 0, 0.267) 0px 0px 4px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Talkin main .messages-view .message ._body{
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+    max-width: 80%;
+    min-width: 200px;
+    height: fit-content;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 0px 4px;
+    background: rgba(255, 255, 255, 0.829);
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    flex-direction: column;
+}
+.Talkin main .messages-view .message ._body::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-sendtime);
+    color: var(--red);
+    transform: translate(1.5%,-110%);
+}
+.Talkin main .messages-view .message ._body img{
+    width: 100%;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    object-fit: contain;
+}
+.Talkin main .messages-view .message ._body video{
+    border-radius: 12px;
+    width: 100%;
+    border-top-left-radius: 0px;
+}
+.Talkin main .messages-view .message ._body audio{
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+}
+.Talkin main .messages-view .message ._body p{
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+.Talkin main .messages-view ._right{
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+.Talkin main .messages-view ._right ._body{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+}
+.Talkin main .messages-view ._right ._body img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+}
+.Talkin main .messages-view ._right ._body video{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+}
+.Talkin main .messages-view ._right ._body audio{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+}
+.Talkin main .messages-view ._right ._body::after{
+    right: 0%;
+    left: unset;
+    transform: translate(-1.5%,-110%);
+}
+.Talkin main .messages-view .someone-writing{
+    margin-top: auto;
+    width: 100%;
+    padding: 5px;
+}
+.Talkin main .messages-view .someone-writing p{
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: var(--bg-light);
+}
+
+
+.Talkin main .message-input{
+    width: 100%;
+    border-top: solid rgba(0, 0, 0, 0.123) 1px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+}
+.Talkin main .message-input ._controls{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.Talkin main .message-input ._controls button{
+    min-width: 100px;
+}

@@ -1,0 +1,87 @@
+.SearchView{
+    height: 0;
+    position: fixed;
+    top: 90px;
+    display: flex;
+    transition: all cubic-bezier(.37,.29,0,1.5) 0.6s;;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    left: 0px;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(34, 31, 31, 0.658),rgba(24, 22, 22, 0.034));
+}
+.Search-active{
+    height: calc(100vh - 90px);
+    opacity: 1;
+}
+.SearchView .-display{
+    width: 100%;
+    display: flex;
+    padding: 22px 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+.SearchView .-default{
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.SearchView .-display h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    user-select: none;
+}
+.SearchView .-display p{
+    width: 100%;
+    color: var(--bg-light);
+    user-select: none;
+    padding: 15px;
+    padding-left: 50px;
+    transition: all cubic-bezier(.37,.29,0,1.5) 0.2s;
+    font-size: 2rem;
+}
+.SearchView .-display p:hover{
+    background: rgba(0, 0, 0, 0.705);
+}
+.SearchView .-display p:active{
+    transform: scale(0.9);
+}
+.SearchView .-display .item{
+    width: 90%;
+    margin-bottom: 15px;
+    height: 100px;
+    display: flex;
+    gap: 25px;
+}
+.SearchView .-display .item img{
+    height: 100%;
+    border-radius: 8px;
+}
+.SearchView .-display .item p{
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.SearchView .-close{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SearchView .-close p{
+    transition: all cubic-bezier(.37,.29,0,1.5) 0.2s;
+    font-size: 4rem;
+    color: var(--text-dark);
+}
+.SearchView .-close:hover p{
+    transform: translateY(-10px);
+    font-size: 5rem;
+}

@@ -1,0 +1,193 @@
+.pop-up-view{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+    background: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(6px);
+}
+.pop-up-view-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.pop-up-view>p{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+}
+.pop-up-view .update-view{
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px;
+    background: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.pop-up-view .update-view img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.pop-up-view .update-view .set{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.pop-up-view .add-client-view{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 20px;
+}
+.pop-up-view .add-client-view .clients{
+    display: flex;
+    min-height: 250px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 300px;
+    flex-direction: column;
+    overflow: auto;
+}
+.pop-up-view .add-client-view .clients>p{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.pop-up-view .add-room-view{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 20px;
+}
+.pop-up-view .add-room-view>span{
+    width: 100%;
+    height: 1px;
+    background: rgba(148, 148, 148, 0.39);
+    margin: 5px;
+}
+.pop-up-view .add-room-view .clients{
+    display: flex;
+    min-height: 250px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 300px;
+    flex-direction: column;
+    overflow: auto;
+}
+.pop-up-view .add-room-view .clients>p{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.pop-up-view .add-room-view .clients ._room{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: rgb(248, 246, 246);
+}
+.pop-up-view .add-room-view .clients ._room img{
+    height: 85%;
+    border-radius: 5px;
+}
+.pop-up-view .add-room-view .clients ._room p{
+    font-size: 1.1rem;
+}
+.pop-up-view .add-room-view .clients ._room span{
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    font-size: 1.2rem;
+}
+.pop-up-view .add-room-view .clients ._room:hover{
+    background: var(--blue);
+}
+.pop-up-view .add-room-view .clients ._room:hover span{
+    color: white;
+}
+.pop-up-view .add-room-view .clients ._room:hover p{
+    color: white;
+}
+.pop-up-view .add-room-view .clients ._room span:active{
+    transform: scale(0.9);
+}
+.pop-up-view .add-room-view .set{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+}
+
+.pop-up-view .add-client-view .clients{
+    display: flex;
+    min-height: 250px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 300px;
+    flex-direction: column;
+    overflow: auto;
+}
+.pop-up-view .add-client-view .clients>p{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.pop-up-view .add-client-view .clients ._room{
+    display: flex;
+    height: 40px;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: rgb(248, 246, 246);
+}
+.pop-up-view .add-client-view .clients ._room img{
+    height: 90%;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.pop-up-view .add-client-view .clients ._room p{
+    font-size: 1.1rem;
+}
+.pop-up-view .add-client-view .clients ._room span{
+    margin-left: auto;
+    transition: all cubic-bezier(.53,-0.09,.48,1.15) 0.2s;
+    font-size: 1.2rem;
+}
+.pop-up-view .add-client-view .clients ._room:hover{
+    background: var(--blue);
+}
+.pop-up-view .add-client-view .clients ._room:hover span{
+    color: white;
+}
+.pop-up-view .add-client-view .clients ._room:hover p{
+    color: white;
+}
+.pop-up-view .add-client-view .clients ._room span:active{
+    transform: scale(0.9);
+}
